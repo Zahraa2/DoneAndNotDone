@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>1</title>
+
+</head>
+<body>
+  
+  <div class="mainwrapper">
+    <div>
+      <span style="color: #150E56; font-weight: normal;">Not Done</span>
+      <i class="fas fa-times" style="margin-left: 5px;"></i>
+    <div class="notDone">
+
+      <ul id="list1">
+        <li>Js</li>
+        <li>Jquery</li>
+        <li>Angular</li>
+        <li>Html</li>
+      </ul>
+    </div>
+    </div>
+    <div style="display: flex; flex-direction: column; border: none;">
+      <i class="fas fa-arrow-left"></i>
+      <i class="fas fa-arrow-right"></i>
+    </div>
+   <div>
+    <span style="color: #150E56; font-weight: normal; font-size: 1.2rem;">Done</span>
+    <i class="fas fa-check"  style="margin-left: 5px;"></i>
+    <div class="done">
+      <ul id="list2">
+        <li>Css</li>
+      </ul>
+    </div>
+   </div>
+  </div>
+
+
+
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <button class="btn btn1">&lt</button>
+    <button class="btn btn2">&gt</button>
+  </div>
+
+  <form >
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 40px;">
+      <span style="margin-right: 20px; font-size: 1.2rem; color: #150E56;">add course</span> 
+      <input type="text" style="margin-right: 10px;" id="getcourse">
+      <input type="submit" value="add" style="cursor: pointer;"  id="addcourse" >
+    </div>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
