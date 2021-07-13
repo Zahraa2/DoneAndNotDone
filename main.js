@@ -5,40 +5,43 @@
 // var listItems2 = document.getElementById('list2').getElementsByTagName('li') ; 
 
 const mainwrapper = document.querySelector('.mainwrapper')
-
+var clicked = false ; 
 mainwrapper.addEventListener('click' , (e) => { 
    if(e.target.nodeName == 'LI'){
 
     clickedelement= e.target ; 
-      //  console.log(clickedvalue);
+    clicked = true ; 
 
    }
 
 })
 
-// for(var i = 0 ; i < myelements.length ; i++) {
-//   myelements[i].addEventListener('click' , (e) => {
-//     clickedelement = e.target ;
-//   })
-// }
 
   prev = document.querySelector('.btn2') ; 
   prev.addEventListener('click' , () => {
+   if (clicked == true ) {
+    clicked = false ; 
     var listItem = document.createElement('li'); 
     listItem.innerText = clickedelement.innerText ;
     list2.appendChild(listItem) ;
     clickedelement.remove() ;
-    console.log(clickedelement.innerText);
+    
+   }
   })
 
 
   next = document.querySelector('.btn1') ; 
   next.addEventListener('click' , () => {
-    var listItem = document.createElement('li'); 
-    listItem.innerText = clickedelement.innerText ;
-    list1.appendChild(listItem) ;
-    clickedelement.remove() ;
- 
+    if (clicked == true ) {
+      clicked = false ; 
+      var listItem = document.createElement('li'); 
+      listItem.innerText = clickedelement.innerText ;
+      list1.appendChild(listItem) ;
+      clickedelement.remove() ;
+    
+    }
+    
+
   })
 
   var addcourse = document.getElementById("addcourse") ; 

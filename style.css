@@ -18,7 +18,9 @@ body {
     margin: auto; 
     align-items: center;
     height: 50vh; 
-    width: 400px;   
+    width: 350px;   
+    
+
   }
 
   .notDone , .done{ 
